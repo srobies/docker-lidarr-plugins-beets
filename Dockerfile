@@ -6,7 +6,7 @@ RUN \
     apk add --no-cache beets \
     py3-pyacoustid \
     py3-pylast \
-    ffmpeg \
+    ffmpeg
 ENV BEETSDIR="/config/beets" \
     HOME="/config/beets"
 
