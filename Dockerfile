@@ -6,10 +6,9 @@ RUN \
     apk add --no-cache python3 jpeg \
     pip install -U --no-cache-dir --find-links https://wheel-index.linuxserver.io/alpine-3.21/ \
     beets \
-    rm -rf \
-        /tmp/* \
-        $HOME/.cache \
-        $HOME/.cargo
+    flask \
+    acoustid \
+    pylast
     ENV BEETSDIR="/config/beets" \
               HOME="/config/beets"
 
