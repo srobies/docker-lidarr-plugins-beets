@@ -3,4 +3,11 @@
   "extends": [
     "config:recommended"
   ]
+  "packageRules" : [
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["ghcr.io/linuxserver-labs/prarr"],
+      "versioning": "loose"
+    }
+  ]
 }
