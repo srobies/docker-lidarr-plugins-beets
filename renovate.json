@@ -8,7 +8,7 @@
       "customType": "regex",
       "datasourceTemplate": "docker",
       "managerFilePatterns": ["/^Dockerfile$/"],
-      "matchStrings": ["FROM (?<depName>.*?):(?<currentValue>.*?)\n"]
+      "matchStrings": ["FROM ghcr.io\/linuxserver-labs\/prarr:(?<depName>lidarr-plugins)-(?<currentValue>.*?)\n"]
     }
   ]
 }
