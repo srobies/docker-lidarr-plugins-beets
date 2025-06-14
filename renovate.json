@@ -6,7 +6,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "datasourceTemplate": "github-runners",
+      "datasourceTemplate": "loose",
       "managerFilePatterns": ["/^Dockerfile$/"],
       "matchStrings": ["FROM (?<depName>.*?):(?<currentValue>.*?)\n"]
     }
