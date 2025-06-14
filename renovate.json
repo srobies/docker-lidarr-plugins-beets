@@ -6,8 +6,9 @@
   "customManagers": [
     {
       "customType": "regex",
+      "datasourceTemplate": "docker",
       "managerFilePatterns": ["/^Dockerfile$/"],
-      "matchStrings": ["FROM ghcr\.io\/linuxserver-labs\/prarr:(?<currentValue>.*?)\n"]
+      "matchStrings": ["FROM (?<depName>.*?):(?<currentValue>.*?)\n"]
     }
   ]
 }
