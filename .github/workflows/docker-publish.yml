@@ -26,9 +26,9 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      version: ${{ steps.version.outputs.version }}
-      labels: ${{ steps.version.outputs.labels }}
-      tags: ${{ steps.version.outputs.tags }}
+      version: ${{ steps.metadata.outputs.version }}
+      labels: ${{ steps.metadata.outputs.labels }}
+      tags: ${{ steps.metadata.outputs.tags }}
 
     steps:
       - name: Check repository
