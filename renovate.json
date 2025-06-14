@@ -2,14 +2,5 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
-  ],
-  "customManagers": [
-    {
-      "customType": "regex",
-      "datasourceTemplate": "github-runners",
-      "versioningTemplate": "loose",
-      "managerFilePatterns": ["/^Dockerfile$/"],
-      "matchStrings": ["FROM (?<depName>.*?):(?<currentValue>.*?)\n"]
-    }
   ]
 }
